@@ -1,7 +1,8 @@
 import axios from "axios"
 
 const API = axios.create({
-  baseURL: "http://localhost:5000"
+  baseURL: "https://price-tracker-1-18hm.onrender.com/"
 })
+
 
 export default API
