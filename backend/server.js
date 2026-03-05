@@ -14,7 +14,7 @@ const app = express()
 
 // allow frontend to call backend
 app.use(cors(
-   origin: "https://pricetracker-juwvdy33g-prateek-tyagis-projects-1ed6278d.vercel.app/"
+   origin: "*"
 ))
 
 app.use(express.json())
@@ -52,3 +52,4 @@ app.listen(PORT, () => {
 
 
 })
+
