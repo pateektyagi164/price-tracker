@@ -13,7 +13,9 @@ const { startPriceMonitor } = require("./scheduler/priceMonitor")
 const app = express()
 
 // allow frontend to call backend
-app.use(cors())
+app.use(cors(
+   origin: "https://pricetracker-juwvdy33g-prateek-tyagis-projects-1ed6278d.vercel.app/"
+))
 
 app.use(express.json())
 
@@ -47,5 +49,6 @@ app.listen(PORT, () => {
 
   console.log("Firecrawl key loaded:", process.env.FIRECRAWL_API_KEY)
   console.log(`Server running on port ${PORT}`)
+
 
 })
